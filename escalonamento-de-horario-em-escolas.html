@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<link href="css/style.css" id="interface_style-css" media="all" rel="stylesheet" type="text/css"/>
+	<link href="//fonts.googleapis.com/css?family=PT+Sans%3A400%2C700italic%2C700%2C400italic&#038;ver=4.9.13" id="google-fonts-css" media="all" rel="stylesheet" type="text/css"/>
+	<meta charset="utf-8"/>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	<title>GPEA &#8211; Escalonamento de Horário em Escolas</title>
+</head>
+
+<body class="business-layout full-width-template">
+	<div class="wrapper">
+		<header id="branding">
+			<div class="hgroup-wrap">
+				<div class="clearfix container">
+					<section class="clearfix" id="site-logo">
+						<h1 id="site-title">
+							<a href="index.html">
+								<img alt="GPEA" src="img/logo.png" width="180"/>
+							</a>
+						</h1>
+					</section>
+					<section class="hgroup-right">
+						<h1>
+							<button class="menu-toggle">Menu Responsivo</button>
+						</h1>
+						<nav class="clearfix" id="access">
+							<ul>
+								<li>
+									<a href="index.html">Início</a>
+								</li>
+								<li>
+									<a href="linha-de-pesquisa.html">Linha de Pesquisa</a>
+									<ul>
+										<li>
+											<a href="projetos-de-pesquisa-em-andamento.html">Projetos de Pesquisa em Andamento</a>
+										</li>
+										<li>
+											<a href="publicacoes.html">Publicações</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="equipe.html">Equipe</a>
+								</li>
+								<li>
+									<a href="http://www.uem.br">Universidade</a>
+									<ul>
+										<li>
+											<a href="http://www.din.uem.br">Departamento de Informática</a>
+										</li>
+										<li>
+											<a href="http://www.ctc.uem.br">Centro de Tecnologia</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="laboratorio.html">Laboratório</a>
+								</li>
+								<li class="current-menu-item">
+									<a href="benchmarks.html">Benchmarks</a>
+									<ul>
+										<li class="current-submenu-item">
+											<a href="escalonamento-de-horario-em-escolas.html">Escalonamento de Horário em Escolas</a>
+										</li>
+										<li>
+											<a href="escalonamento-na-agro-industria.html">Escalonamento na Agroindústria</a>
+										</li>
+										<li>
+											<a href="escalonamento-no-transporte-coletivo.html">Escalonamento no Transporte Coletivo</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="contato.html">Contato</a>
+								</li>
+							</ul>
+						</nav>
+						<span class="arrow"></span>
+					</section>
+				</div>
+			</div>
+			<section class="slogan-wrap">
+				<div class="container">
+					<h1 class="slogan">
+						Grupo de Pesquisa em Engenharia de Algoritmo
+						<span>Escalonamento de Horário em Escolas</span>
+					</h1>
+				</div>
+			</section>
+		</header>
+		<div id="main">
+			<div class="clearfix container">
+				<div id="content">
+					<h3>Definição do problema</h3>
+					<p>Uma das principais preocupações neste problema é evitar que professores e turmas sejam alocadas em mais de uma aula ao mesmo tempo. Além disso, uma das versões do PEHE, também leva em consideração a possibilidade de professores e/ou turmas estarem indisponíveis em determinados períodos, dificultando ainda mais a sua solução.</p>
+					<p>Abaixo apresentamos algumas variantes do PEHE.</p>
+					<ul>
+						<li>
+							<strong>Aulas simultâneas:</strong>
+							Geralmente, algumas aulas podem ocorrer de maneira simultânea para mais de uma turma. Isso é possível quando, por exemplo, duas turmas são reunidas para que participem juntas da mesma aula de educação física. Neste caso, as turmas que estão participando da referida aula não podem ser alocadas para outras aulas durante sua duração.
+						</li>
+						<li>
+							<strong>Professores para mais de um assunto:</strong>
+							Usualmente, um conjunto de professores é designado para ministrar aulas para uma determinada turma. Dentro deste contexto, existe o caso em que a turma precisa ter aulas de uma matéria em específico, e mais de um professor pode lecionar a mesma matéria. Porém, é necessário que todas as aulas desta matéria sejam ministradas pelo mesmo professor. Além disso, é possível que existam professores capazes de lecionar mais de uma matéria.
+						</li>
+						<li>
+							<strong>Aulas descobertas:</strong>
+							Algumas escolas têm como exigência que todos os seus períodos sejam preenchidos com aulas. Por exemplo, uma turma que estuda no turno da manhã e tem cinco períodos por dia, deve ter cinco aulas. Outro caso são escolas cujos períodos não precisam ser totalmente preenchidos, permitindo somente que o primeiro ou o último período sejam vagos.
+						</li>
+						<li>
+							<strong>Salas especiais:</strong>
+							Nos problemas básicos, não é levado em consideração à alocação das salas de aulas, pois é assumido que cada turma possua sua própria sala de aula. Porém, é possível que algumas aulas ou matérias necessitem de salas com equipamento especial, como, por exemplo, aulas de ciência, que requerem o uso de laboratório. A quantidade deste tipo de salas geralmente é pequena, o que gera uma restrição quanto a sua alocação, onde não é possível que mais de uma turma seja alocada para usá-la ao mesmo tempo.
+						</li>
+					</ul>
+					<h3>Base de dados para benchmark</h3>
+					<p>A base de dados disponível abaixo contém 102 instâncias de testes para o PEHE. Os dados contidos nestas instâncias foram extraídos de 13 escolas públicas de ensino médio, localizadas no Brasil. Dentre essas instâncias, 34 delas representam casos reais, oriundos das escolas públicas, enquanto as demais 68 instâncias, divididas em dois grupos de 34, representam casos denominados semirreais, pois, apesar de serem dados reais, sofreram algumas modificações.</p>
+					<p>As modificações realizadas nas instâncias de casos semirreais tiveram como intuito gerar dois grupos com níveis de dificuldade de resolução diferentes, de forma que um deles teve sua resolução facilitada e o outro dificultada. Assim, a base de dados é composta por três grupos de instâncias, classificados em três níveis de dificuldade de resolução: fácil, moderado e difícil.</p>
+					<p><strong>Download:</strong> <a href="download/SC-CTTP102.zip" download>SC-CTTP102</a></p>
+					<h3>Formato da Instância</h3>
+					<p>É dividido em quatro seções:</p>
+					<ul>
+						<li>
+							<strong>Dimension:</strong>
+							Nesta seção é informada a dimensão do problema que a instância representa. Aqui os seguintes dados são fornecidos: número de turmas (<em>number_of_classes</em>), número de professores (<em>number_of_teachers</em>), número de dias (<em>number_of_days</em>) e número de períodos (<em>number_of_periods</em>). Estes dados devem ser dispostos em uma única linha, sendo separados por vírgula. Esta seção contém apenas uma linha.
+							<br/>
+							<table>
+								<tr>
+									<td>number_of_classes</td>
+									<td>number_of_teachers</td>
+									<td>number_of_days</td>
+									<td>number_of_periods</td>
+								</tr>
+							</table>
+						</li>
+						<li>
+							<strong>Requirements:</strong>
+							Seção que contém os requerimentos de aulas do problema. Cada requerimento deve conter os seguintes dados: número identificador da turma (<em>class</em>), número identificador do professor (<em>teacher</em>), número de lições (<em>number_of_lessons</em>), número máximo de lições por dia (<em>maximum_number_of_lessons_by_day</em>) e número mínimo de lições por dia (<em>minimum_number_of_double_lessons</em>). Diferente da seção anterior, esta seção suporta múltiplas linhas, onde cada linha representa um requerimento diferente, e os dados de cada linha devem ser separados por vírgula.
+							<br/>
+							<table>
+								<tr>
+									<td>class</td>
+									<td>teacher</td>
+									<td>number_of_lessons</td>
+									<td>maximum_number_of_lessons_by_day</td>
+									<td>minimum_number_of_double_lessons</td>
+								</tr>
+							</table>
+						</li>
+						<li>
+							<strong>TeachersUnavailability:</strong>
+							São informados nesta seção os dados referentes aos professores indisponíveis, assim como os dias e períodos de indisponibilidade de cada um. Os dados que devem ser fornecidos são: número identificador do professor (<em>teacher</em>), dia de indisponibilidade (<em>day</em>) e o período (<em>period</em>). A disposição dos dados e a quantidade de linhas permitidas nesta seção seguem o padrão da seção &lt;<em>requirements</em>&gt;.
+							<br/>
+							<table>
+								<tr>
+									<td>teacher</td>
+									<td>day</td>
+									<td>period</td>
+								</tr>
+							</table>
+						</li>
+						<li>
+							<strong>ClassUnavailability:</strong>
+							Assim como os professores, as turmas também podem ter dias e períodos de indisponibilidade. Esta seção agrupa os dados de indisponibilidade das turmas, assim como seus respectivos dias e períodos. Os dados presentes aqui são: número identificador da turma (<em>class</em>), dia de indisponibilidade (<em>day</em>) e o período (<em>period</em>). A disposição dos dados e quantidade de linhas permitidas é similar a seção <em>&lt;teachersunavailability</em>&gt;.
+							<br/>
+							<table>
+								<tr>
+									<td>class</td>
+									<td>day</td>
+									<td>period</td>
+								</tr>
+							</table>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="widget widget_ourclients">
+			<div class="container">
+				<ul>
+					<li>
+						<a href="http://www.uem.br" target="_blank" title="UEM">
+							<img alt="UEM" src="img/uem.png"/>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.din.uem.br" target="_blank" title="DIN">
+							<img alt="DIN" src="img/din.png"/>
+						</a>
+					</li>
+					<li>
+						<a href="index.html" title="GPEA">
+							<img alt="GPEA" src="img/gpea.png"/>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<footer class="clearfix" id="colophon">
+			<div class="widget-wrap">
+				<div class="container">
+					<div class="clearfix widget-area">
+						<div class="one-third">
+							<aside aria-label="projetc-supporters" class="widget widget_nav_menu">
+								<h2 class="widget-title">Apoio</h2>
+								<div>
+									<ul>
+										<li>
+											<a href="https://www.gov.br/capes/pt-br">CAPES</a>
+										</li>
+										<li>
+											<a href="https://www.gov.br/cnpq/pt-br">CNPq</a>
+										</li>
+										<li>
+											<a href="http://www.fappr.pr.gov.br">Fundação Araucária</a>
+										</li>
+									</ul>
+								</div>
+							</aside>
+						</div>
+						<div class="one-third">
+							<aside aria-label="project-contact" class="widget">
+								<h2 class="widget-title">Contato</h2>
+								<div>
+									<p>
+										Prof. Dr. Ademir A. Constantino<br/>
+										Departamento de Informática &#8211; DIN
+										<br/>
+										Bloco C56 &#8211; Sala 227
+										<br/>
+										Telefone: +55 (44) 3011-5110
+										<br/>
+										E-mail: aaconstantino<wbr/>@uem.br
+									</p>
+								</div>
+							</aside>
+						</div>
+						<div class="one-third">
+							<aside aria-label="project-address" class="widget">
+								<h2 class="widget-title">Endereço</h2>
+								<div>
+									<p>
+										Universidade Estadual de Maringá &#8211; UEM
+										<br/>
+										Departamento de Informática &#8211; DIN
+										<br/>
+										Av. Colombo, 5790 &#8211; CEP 87.020-900
+										<br/>
+										Bloco C56 &#8211; Sala 201 (Secretaria)
+										<br/>
+										Telefones: +55 (44) 3011-4324 / 3011-4219
+										<br/>
+										Fax: +55 (44) 3011-5035
+									</p>
+								</div>
+							</aside>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="site-generator">
+				<div class="clearfix container">
+					<div class="copyright">Copyright &copy; 2020 GPEA</div>
+				</div>
+			</div>
+			<div class="back-to-top">
+				<a href="#branding"></a>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
