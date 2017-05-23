@@ -36,3 +36,5 @@ gpea/
 ├── seminario.html
 └── sobre.html
 ```
+
+Além dos arquivos listados acima, está incluído outro projeto chamado "Encargos UEM" no diretório `other-projects`.
