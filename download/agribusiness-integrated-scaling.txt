@@ -1,0 +1,9 @@
+@inbook{Constantino:cepe_12_1:algoritmo_evolutivo_hibrido,
+	author = {Constantino, Ademir and Landa-Silva, Dario and Romão, Wesley},
+	doi = {10.7436/2011.cepe.c12}
+	isbn = {9788564619043},
+	month = {10},
+	pages = {251-272},
+	title = {Algoritmo evolutivo híbrido para escalonamento integrado na agroindústria},
+	year = {2011},
+}
