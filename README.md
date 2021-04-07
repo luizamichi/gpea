@@ -97,4 +97,4 @@ gpea/
 └── README.md
 ```
 
-Além dos arquivos listados acima, serão incluídos outros projetos realizados no projeto de extensão (Encargos UEM, NCYPred e Web Scraping) no diretório `other-projects`.
+Além dos arquivos listados acima, serão incluídos outros projetos realizados no projeto de extensão (EduConnect, Encargos UEM, NCYPred e Web Scraping) no diretório `other-projects`.
