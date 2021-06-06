@@ -1,0 +1,8 @@
+biopython>=1.78
+Flask>=1.1.2
+numpy>=1.19.5
+pandas>=1.1.5
+pickle-mixin>=1.0.2
+pip>=21.0.1
+setuptools>=54.2.0
+tensorflow>=2.4.1
