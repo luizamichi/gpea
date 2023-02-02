@@ -1,0 +1,10 @@
+@article{Saviniec:asc_60:effective_local_search,
+	author = {Saviniec, Landir and Constantino, Ademir},
+	doi = {10.1016/j.asoc.2017.06.047},
+	journal = {Applied Soft Computing},
+	month = {06},
+	pages = {},
+	title = {Effective local search algorithms for high school timetabling problems},
+	volume = {60},
+	year = {2017}
+}

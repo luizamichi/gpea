@@ -1,0 +1,17 @@
+@Article{Constantino:jucs_23_5:solving_a_large_real,
+	abstract = {The bus driver scheduling problem (BDSP) under study consists in finding a set of duties that covers the bus schedule from a Brazilian public transportation bus company with the objective of minimizing the total cost. A deterministic 2-phase heuristic algorithm is proposed using multiple assignment problems that arise from a model based on a weighted multipartite graph. In the first phase, the algorithm constructs an initial feasible solution by solving a number of assignment problems. In the second phase, the algorithm attempts to improve the solution by two different procedures. One procedure takes the whole set of duties and divides them in a set of partial duties which are recombined. The other procedure seeks to improve single long duties by eliminating the overtime time and inserting it into another duty. Computational tests are performed using large-scale real-world data with more than 2,300 tasks and random instances extracted from real data. Three different objective functions are analyzed. The overall results indicate that the proposed approach is competitive to solve large BDSP.},
+	author = {Ademir Aparecido Constantino and Candido Ferreira Xavier de Mendonca Neto and Silvio Alexandre de Araujo and Dario Landa-Silva and Rogério Calvi and Allainclair Flausino dos Santos},
+	date = {2017-05-28},
+	doi = {10.3217/jucs-023-05-0479},
+	issn = {0948-6968},
+	journal = {JUCS - Journal of Universal Computer Science},
+	month = {May},
+	note = {\url|http://www.jucs.org/jucs_23_5/solving_a_large_real|},
+	number = {5},
+	pages = {479-504},
+	publisher = {Verlag der Technischen Universit\"{a}t Graz},
+	title = {Solving a Large Real-world Bus Driver Scheduling Problem with a Multi-assignment based Heuristic Algorithm},
+	url = {http://doi.org/10.3217/jucs-023-05-0479},
+	volume = {23},
+	year = {2017}
+}
